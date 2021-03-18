@@ -1,6 +1,5 @@
 ﻿using Rocket.API;
 using Rocket.Unturned.Chat;
-using Rocket.Unturned.Events;
 using Rocket.Unturned.Player;
 using SDG.Unturned;
 using System;
@@ -21,7 +20,7 @@ namespace EMS
 
         public List<UnturnedPlayer> GetPlayersWithPermission(string permission)
         {
-           return Provider.clients.Select(UnturnedPlayer.FromSteamPlayer).Where(player => player.HasPermission(permission)).ToList();
+            return Provider.clients.Select(UnturnedPlayer.FromSteamPlayer).Where(player => player.HasPermission(permission)).ToList();
         }
 
         public void Execute(IRocketPlayer caller, string[] args)
@@ -31,13 +30,13 @@ namespace EMS
             var text = "!Message!";
             var message = string.Join(" ", args);
             var players = GetPlayersWithPermission("medic.message");
-            foreach(var player in players)
+            foreach (var player in players)
             {
                 if (MQSPlugin.Instance.Configuration.Instance.TextMode)
-                { 
-                UnturnedChat.Say(caller, MQSPlugin.Instance.Configuration.Instance.EMSMessage.Replace('{', '<').Replace('}', '>').Replace(playername, name).Replace(text, message), true);
+                {
+                    UnturnedChat.Say(caller, MQSPlugin.Instance.Configuration.Instance.EMSMessage.Replace('{', '<').Replace('}', '>').Replace(playername, name).Replace(text, message), true);
                 }
-                else 
+                else
                 {
                     if (MQSPlugin.Instance.Configuration.Instance.EnglishUIs)
                     {
@@ -56,5 +55,3 @@ namespace EMS
     }
 
 }
-
-

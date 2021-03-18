@@ -1,2 +1,2 @@
-# 911-Alerts
-With this plugin you will be able to send UI alerts to your Doctors and Police!
+# OOF
+This is a simple plugin i made, that makes it so that at death, you will hear the known ROBLOX death sound.  Is my sound using UNITY.

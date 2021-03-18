@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30907.101
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SoundEffects", "SoundEffects.csproj", "{5C38930E-2AC3-4A6F-B99B-8CD95A7088F4}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "911-Alerts", "911-Alerts.csproj", "{5C38930E-2AC3-4A6F-B99B-8CD95A7088F4}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -20,6 +20,6 @@ Global
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {3E6C2E30-A9B4-4ABE-A3FD-EAC99158B6D4}
+		SolutionGuid = {5A45A3E3-0CF2-4DC3-A48A-A79C1AF0C018}
 	EndGlobalSection
 EndGlobal
